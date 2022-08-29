@@ -9,6 +9,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
+
 const config: HardhatUserConfig = {
   defaultNetwork: "goerli",
   networks: {
@@ -16,7 +17,7 @@ const config: HardhatUserConfig = {
     },
     goerli: {
       url: "https://eth-goerli.g.alchemy.com/v2/VP8HbkayBbeQqFjOLXUg69snsiQKNhWG",
-      accounts: ['ca630a8e64c28fd2ba407e5b1a7803385a098ea52bba011865745118558788f3']
+      accounts: ['5c8246522955a0fadbeaccb53ec9ea059dd4807b6bd783c70f06217f4f49eab7']
     }
   },
   etherscan: {
