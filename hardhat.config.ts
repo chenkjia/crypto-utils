@@ -1,5 +1,6 @@
 import { HardhatUserConfig,task } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import { accounts } from "./config";
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -17,7 +18,7 @@ const config: HardhatUserConfig = {
     },
     goerli: {
       url: "https://eth-goerli.g.alchemy.com/v2/VP8HbkayBbeQqFjOLXUg69snsiQKNhWG",
-      accounts: ['5c8246522955a0fadbeaccb53ec9ea059dd4807b6bd783c70f06217f4f49eab7']
+      accounts
     }
   },
   etherscan: {
